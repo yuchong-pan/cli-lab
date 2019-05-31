@@ -118,7 +118,6 @@ jobs:
       displayName: 'OSX'
       pool:
         name: Hosted macOS
-        vmImage: macOS-10.13
       strategy:
         matrix:
           ${{ if in(variables['Build.Reason'], 'PullRequest') }}:
